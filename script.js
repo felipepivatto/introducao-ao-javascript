@@ -64,3 +64,48 @@ function verificarPalindromo(palavra) {
 
 console.log(verificarPalindromo("arara")); 
 console.log(verificarPalindromo("banana"));
+
+function verificarSinal(num){
+    if(num === 0){
+        console.log('Zero')
+    }
+    else if (num < 0 ){
+        console.log('Numero Negativo')
+    }
+    else(num > 0);{
+        console.log('Numero Positivo')
+    }
+}
+verificarSinal(4);
+
+function converterTemperatura(){
+
+    console.log("Converter temperatura")
+    let temperatura = prompt ("Digite uma temperatura em Celsius para converter para Fahreinheit: ")
+    console.log((temperatura * (9/5)) +32 )
+}
+
+
+
+function atividade14(){
+    console.log("Substituir palavra Azul por Vermelho")
+    let texto = prompt('Digite uma frase ou texto com a palavra azul');
+    console.log(texto.replace(/azul/g, "vermelho"));
+}
+function atividade21(){
+
+    console.log("Soma dos elementos de um Array")
+    let valores = prompt("Digite numeros separados por vírgula: ").split
+    (",").map(Number);
+
+    console.log("Soma: ", valores.reduce((acc, val) => acc+val, 0))
+
+}
+
+function atividade24(){
+
+    console.log("Capitalizar a primeira letra");
+    let texto = prompt("Digite uma palavra: ")
+    console.log(texto.charAt(0) . toUpperCase() + texto.slice(1))
+
+}
